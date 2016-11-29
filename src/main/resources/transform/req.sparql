@@ -1,0 +1,32 @@
+PREFIX ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+
+#scolaire publique 
+
+#etab-ensprimaire-public-men-2.csv
+#etab-ensseccollegial-public.csv
+#etab-enssecqualifiant-public-men.csv
+
+#NOM_ETABLISSENTFR,NOM_ETABLISSENTAR,ADRESSEFR,ADRESSEAR,TELEPHONE,PROVINCE,REGION
+
+
+CONSTRUCT {
+  ?URI a <http://schema.org/EducationalOrganization/>;
+    sch:name ?NOMFR;
+    sch:name ?NOMAR;
+    sch:streetAddress ?addfr;
+	 sch:streetAddress ?addar;
+    sch:telephone ?TELEPHONE;
+    sch:addressLocality ?PROVINCE;
+    sch:addressRegion ?REGION;
+} 
+
+WHERE { 
+	BIND (URI(CONCAT('http://www.data.gov.ma/Education#', REPLACE(?NOM_ETABLISSENTFR,"\\s","_"), ?REGION)) AS ?URI)
+	BIND (STRLANG(?NOM_ETABLISSENTFR, 'fr-FR') AS ?NOMFR)
+	BIND (STRLANG(?NOM_ETABLISSENTAR, 'ar-AR') AS ?NOMAR)
+	BIND (STRLANG(?ADRESSEFR, 'fr-FR') AS ?addfr)
+	BIND (STRLANG(?ADRESSEAR, 'ar-AR') AS ?addar)
+}

@@ -1,0 +1,13 @@
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#> 
+PREFIX sch:  <http://schema.org/> 
+PREFIX ex:  <http://ex.org/a#> 
+PREFIX xml:  <http://www.w3.org/XML/1998/namespace> 
+ASK{
+  SELECT ?name (COUNT(?name) AS ?nbSchools)
+  WHERE { 	
+	?x sch:name ?name.
+	?x sch:addressLocality ?city.
+  FILTER(regex(?city,"Safi", "i") && ?nbSchools>10)
+}
+  Group by ?name
+}
