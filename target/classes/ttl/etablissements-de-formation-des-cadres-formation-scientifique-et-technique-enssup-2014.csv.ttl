@@ -1,0 +1,218 @@
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix sch:  <http://schema.org/> .
+@prefix ex:  <http://ex.org/a#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9-Agadir>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé-Agadir"@fr-FR ;
+        sch:streetAddress    "Hôpital Hassan II - Agadir"@fr-FR ;
+        sch:telephone        "(+212) 05 28 84 15 24" ;
+        sch:faxNumber        "(+212) 05 28 84 39 87" ;
+        sch:addressLocality  "﻿Agadir" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#Institut%20Sup%C3%A9rieur%20des%20P%C3%AAches%20Maritimes>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut Supérieur des Pêches Maritimes"@fr-FR ;
+        sch:streetAddress    "Route d'Anza- Aghezdis BP 479 Agadir"@fr-FR ;
+        sch:telephone        "(+212) 05 28 84 41 70" ;
+        sch:faxNumber        "(+212) 05 28 84 58 58" ;
+        sch:addressLocality  "Agadir" ;
+        dbo:Website          "www.ispm.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Acad%C3%A9mie%20Internationale%20Mohammed%20VI%20de%20L'aviation%20Civile%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Académie Internationale Mohammed VI de L'aviation Civile "@fr-FR ;
+        sch:streetAddress    "Technopole de l'aéroport Mohammed V-Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 53 84 80" ;
+        sch:faxNumber        "(+212) 05 22 53 97 79" ;
+        sch:addressLocality  "Casablanca" ;
+        dbo:Website          "www.aviation.ma/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Hassania%20des%20Travaux%20Publics>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Hassania des Travaux Publics"@fr-FR ;
+        sch:streetAddress    "KM 7, Route d'el jadida, B.P 8108, Oasis, Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 42 05 08" ;
+        sch:faxNumber        "(+212) 05 22 23 07 17" ;
+        sch:addressLocality  "Casablanca" ;
+        dbo:Website          "www.ehtp.ac.ma/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Nationale%20des%20Pilotes%20de%20Ligne>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Nationale des Pilotes de Ligne"@fr-FR ;
+        sch:streetAddress    "Aéroport d' Anfa - Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 91 25 41" ;
+        sch:faxNumber        "(+212) 05 22 91 28 01" ;
+        sch:addressLocality  "Casablanca" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Royale%20Navale>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Royale Navale"@fr-FR ;
+        sch:streetAddress    "Boulevard Sour Jdid -Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 27 84 51" ;
+        sch:faxNumber        "(+212) 05 22 22 16 72" ;
+        sch:addressLocality  "Casablanca" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Sup%C3%A9rieure%20des%20Industries%20du%20Textile%20et%20de%20l'Habillement%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Supérieure des Industries du Textile et de l'Habillement "@fr-FR ;
+        sch:streetAddress    "Route d'Eljadida, km 8, BP 7731 - Oulfa -Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 23 41 24" ;
+        sch:faxNumber        "(+212) 05 22 23 15 85" ;
+        sch:addressLocality  "Casablanca" ;
+        dbo:Website          "www.esith.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-Casablanca%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Casablanca "@fr-FR ;
+        sch:streetAddress    "Rue Mohamed El Faidouzi-Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 26 02 85" ;
+        sch:faxNumber        "(+212) 05 22 26 02 85" ;
+        sch:addressLocality  "Casablanca" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#Institut%20Sup%C3%A9rieur%20des%20%C3%89tudes%20Maritimes>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut Supérieur des Études Maritimes"@fr-FR ;
+        sch:streetAddress    "Km 7 Route d'El Jadida Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 23 07 44" ;
+        sch:faxNumber        "(+212) 05 22 23 15 68" ;
+        sch:addressLocality  "Casablanca" ;
+        dbo:Website          "www.isem.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-F%C3%A8s%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Fès "@fr-FR ;
+        sch:streetAddress    "Hôp. Ibn Al Khatib 30 000 -Fès"@fr-FR ;
+        sch:telephone        "(+212) 05 35 75 41 76" ;
+        sch:faxNumber        "(+212) 05 35 75 41 76" ;
+        sch:addressLocality  "Fès" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Royale%20de%20l'Air%20%EF%BB%BF>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Royale de l'Air ﻿"@fr-FR ;
+        sch:streetAddress    "Commandements - BEFRA et ERA Marrakech"@fr-FR ;
+        sch:telephone        "(+212) 05 24 43 04 11" ;
+        sch:faxNumber        "(+212) 05 24 43 84 12" ;
+        sch:addressLocality  "Marrakech" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-Marrakech%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Marrakech "@fr-FR ;
+        sch:streetAddress    "Riad Si Aïssa Mouassine, Marrakech"@fr-FR ;
+        sch:telephone        "(+212) 05 24 44 21 95" ;
+        sch:faxNumber        "(+212) 05 24 44 14 69" ;
+        sch:addressLocality  "Marrakech" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Nationale%20d'Agriculture%20de%20Mekn%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Nationale d'Agriculture de Meknès"@fr-FR ;
+        sch:streetAddress    "km. 10, Route Haj Kaddour, B.P. S/40, Meknès, 50001"@fr-FR ;
+        sch:telephone        "(+212) 05 35 30 02 39" ;
+        sch:faxNumber        "(+212) 05 35 30 02 38" ;
+        sch:addressLocality  "Meknès" ;
+        dbo:Website          "www.enameknes.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-Mekn%C3%A8s%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Meknès "@fr-FR ;
+        sch:streetAddress    "Omar El Faroki, BP : 267 - Meknès"@fr-FR ;
+        sch:telephone        "(+212) 05 35 52 09 27" ;
+        sch:faxNumber        "(+212) 05 35 52 09 27" ;
+        sch:addressLocality  "Meknès" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-Oujda%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Oujda "@fr-FR ;
+        sch:streetAddress    "Boulevard El Maghreb El Arabi- Oujda"@fr-FR ;
+        sch:telephone        "(+212) 05 36 68 49 73" ;
+        sch:faxNumber        "(+212) 05 36 68 49 73" ;
+        sch:addressLocality  "Oujda" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Nationale%20d'Architecture%20de%20Rabat%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Nationale d'Architecture de Rabat "@fr-FR ;
+        sch:streetAddress    "Madinat Al Irfane - BP: 6372 Chariaa Allal El Fassi, Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 52 30" ;
+        sch:faxNumber        "(+212) 05 37 77 52 76" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.archi.ac.ma/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Nationale%20de%20l'Industrie%20Min%C3%A9rale>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Nationale de l'Industrie Minérale"@fr-FR ;
+        sch:streetAddress    "Av. Hadj Ahmed Cherkaoui - BP 753, Agdal, Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 68 02 30" ;
+        sch:faxNumber        "(+212) 05 37 77 10 55" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.enim.ac.ma/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20des%20Sciences%20de%20l'Information>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École des Sciences de l'Information"@fr-FR ;
+        sch:streetAddress    "Av. Allal El Fassi, cité Al Irfane BP.6204 Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 49 13" ;
+        sch:faxNumber        "(+212) 05 37 77 02 32" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.esi.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20Agronomique%20et%20V%C3%A9t%C3%A9rinaire%20Hassan%20II>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut Agronomique et Vétérinaire Hassan II"@fr-FR ;
+        sch:streetAddress    "BP 6202-Instituts, 10101-Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 17 58" ;
+        sch:faxNumber        "(+212) 05 37 77 81 35" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.iav.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9-%20Rabat%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé- Rabat "@fr-FR ;
+        sch:streetAddress    "Av. Hassan II Km 4, Route de Casa, Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 69 19 68" ;
+        sch:faxNumber        "(+212) 05 37 69 27 96" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.enssup.gov.ma" .
+
+<http://www.data.gov.ma/Education#Institut%20National%20des%20Postes%20et%20T%C3%A9l%C3%A9communications%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut National des Postes et Télécommunications "@fr-FR ;
+        sch:streetAddress    " 2, av Allal EL Fassi - Madinat AL Irfane - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 30 79" ;
+        sch:faxNumber        "(+212) 05 37 77 30 44" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.inpt.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20National%20de%20Statistique%20et%20d'%C3%89conomie%20Appliqu%C3%A9e%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut National de Statistique et d'Économie Appliquée "@fr-FR ;
+        sch:streetAddress    "B.P.:6217 Rabat-Instituts"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 48 59" ;
+        sch:faxNumber        "(+212) 05 37 77 94 57" ;
+        sch:addressLocality  "Rabat" ;
+        dbo:Website          "www.insea.ac.ma/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole%20Nationale%20Foresti%C3%A8re%20D%E2%80%99ing%C3%A9nieurs%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "École Nationale Forestière D’ingénieurs "@fr-FR ;
+        sch:streetAddress    "Tabriquet - BP: 511 -Salé"@fr-FR ;
+        sch:telephone        "(+212) 05 37 86 37 22" ;
+        sch:faxNumber        "(+212) 05 37 86 11 49" ;
+        sch:addressLocality  "Salé" ;
+        dbo:Website          "www.enfi.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut%20de%20Formation%20aux%20Carri%C3%A8res%20de%20Sant%C3%A9%20-T%C3%A9touan%20>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+        sch:name             "Institut de Formation aux Carrières de Santé -Tétouan "@fr-FR ;
+        sch:streetAddress    "Hôpital Civil - Tétouan"@fr-FR ;
+        sch:telephone        "(+212) 05 39 97 10 92" ;
+        sch:faxNumber        "(+212) 05 39 97 10 40" ;
+        sch:addressLocality  "Tétouan" ;
+        dbo:Website          "www.enssup.gov.ma" .

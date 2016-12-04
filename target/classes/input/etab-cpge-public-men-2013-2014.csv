@@ -1,4 +1,4 @@
-NOM ETABLISSEMENT,ADRESSE,VILLE,TEL,EMAIL,CYCLE ,REGION,PROVINCE,COMMUNE
+NOMETABLISSEMENT,ADRESSE,VILLE,TEL,EMAIL,CYCLE ,REGION,PROVINCE,COMMUNE
 OMAR ALKHIYYAM,AV ABDELOIHAD ELMARRAKECHI READ AGDAL,Rabat,0660958229,l.omaralkhayam@yahoo.fr,CPGE,Rabat - Sale - Zemmour -Zaer,Rabat,Agdal Riyad (AR)
 MOULAY YOUSSEF,AV MED 5 HASSANE,Rabat,0660958582,moulayyoussefrabat@hotmail.fr,CPGE,Rabat - Sale - Zemmour -Zaer,Rabat,Hassan (AR)
 SALMAN EL FARISSI,AV ALMASSIRA ALKHADRA COMMUNE DE BETTANA,SALE,0679798688,mohamed.halouane@hotmail.com,CPGE,Rabat - Sale - Zemmour -Zaer,Salé,Bettana (AR)
@@ -6,7 +6,7 @@ AL KHANSA,15 RUE RIAD  COMMUNE SIDI BELYOUT,CASABLANCA,0522-22-33-07,lycekhansa@
 LYCEE TECHNIQUE,BD HASSAN II MOHAMMEDIA,MOHAMMEDIA,0523322952,cpgetsimohammedia@yahoo.fr,CPGE,Grand Casablanca,Mohammadia,Mohammadia (M)
 MOULAY IDRISS,BOUJLOUD  FESMEDINA,FES,0535633160,CPGEFES86@gmail.com,CPGE,Fès - Boulmane,Fès,Fes Medina (AR)
 MOULAY ISMAIL,rue wahhabi ali ben jilali vn meknes,MEKNES,0535520217,lqm_ismail@yahoo.fr,CPGE,Meknès - Tafilalet,Meknes,Al Ismailia (M)
-OMAR IBN AL KHATTAB,BD ABDELKARIM AL KHATTABI SBATA C.M.MEKNES,MEKNES,0535536790,omarebnalkhattab@gmail.com,CPGE,Meknès - Tafilalet,Meknes,Al Ismailia (M)
+OMAR IBN AL KHATTAB,BD ABDELKARIM AL KHATTABI SBATA C.M.MEKNES,MEKNES,0535536790,omarebnalkhat4tab@gmail.com,CPGE,Meknès - Tafilalet,Meknes,Al Ismailia (M)
 L OMAR BNOU ABDELAZIZ,BD ALLAL BEN ABDELLAH,OUJDA,0618535182,MANI.HASSAN@TAALIM.MA,CPGE,l'Oriental,Oujda Angad,Oujda (M)
 Lycée Qualifiant Lissane Eddine Ibn Al Khatib,PLACE OUM SAADAVENUE HASSAN 1IER,Laayoune,028-89-23-38,,CPGE,Laayoune-Boujdour-Sakia Al Hamra,Laayoune,Laayoune (M)
 LYCEE MOHAMED V,BOULEVARD 20 AOUT QUARTIER ATLAS,BENI MELLAL,0523-48-32-43,bmmed5@menara.ma,CPGE,Tadla - Azilal,Beni Mellal,Beni Mellal (M)

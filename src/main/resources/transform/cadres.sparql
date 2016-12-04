@@ -1,0 +1,30 @@
+PREFIX ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+#etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv
+#etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv
+#etablissements-de-formation-des-cadres-formation-scientifique-et-technique-enssup-2014.csv
+#universites-marocaines-enssup-2014.csv
+
+#Ville,Nom,Adresse,Téléphone,Fax,Siteweb
+
+CONSTRUCT {
+  ?URI a <http://schema.org/CollegeOrUniversity/>;
+    sch:name ?NOMFR;
+    sch:streetAddress ?ADDFR;
+    sch:telephone ?Telephone;
+	sch:faxNumber ?Fax;
+    sch:addressLocality ?Ville;
+    <http://www.data.gov.ma/Education#isPublic> "true"^^xsd:boolean;
+    dbo:Website ?Siteweb.
+} 
+
+WHERE { 
+	BIND (URI(CONCAT('http://www.data.gov.ma/Education#', ?Nom)) AS ?URI)
+	BIND (STRLANG(?Nom, 'fr-FR') AS ?NOMFR)
+	BIND (STRLANG(?Adresse, 'fr-FR') AS ?ADDFR)
+
+}
