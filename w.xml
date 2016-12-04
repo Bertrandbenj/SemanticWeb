@@ -22,11 +22,18 @@
 	</rdfs:Class>
 
 
-	<rdfs:Class rdf:ID="cubist" rdfs:label="Cubist">
+	<rdfs:Class rdf:ID="public" rdfs:label="Public School">
 		<rdfs:comment>
-		Un cubiste
+		This is a pulic schoool
 		</rdfs:comment>
-		<rdfs:subClassOf rdf:resource="#painter"/>
+		<rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
+	</rdfs:Class>
+
+	<rdfs:Class rdf:ID="private" rdfs:label="Private School">
+		<rdfs:comment>
+		This is a pulic schoool
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
 	</rdfs:Class>
 
 	<rdfs:Class rdf:ID="flemish" rdfs:label="Flemish">

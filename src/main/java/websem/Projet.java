@@ -8,14 +8,20 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.jena.ontology.OntDocumentManager;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.Syntax;
+import org.apache.jena.rdf.model.InfModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.reasoner.ReasonerFactory;
 
 public class Projet {
 	
@@ -27,18 +33,18 @@ public class Projet {
 	
     private static final Map<String, String> toTurtle = new HashMap<String, String>();
     static {
-    	toTurtle.put("etab-bts-public-men-2013-2014.csv", "req3.sparql");
-    	toTurtle.put("etab-cpge-public-men-2013-2014.csv", "req3.sparql");
+    	toTurtle.put("etab-bts-public-men-2013-2014.csv", "btscpge.sparql");
+    	toTurtle.put("etab-cpge-public-men-2013-2014.csv", "btscpge.sparql");
     	
-    	toTurtle.put("etab-ensprimaire-public-men-2.csv", "req.sparql");
-    	toTurtle.put("etab-ensseccollegial-public.csv", "req.sparql");
-    	toTurtle.put("etab-enssecqualifiant-public-men.csv","req.sparql");
+    	toTurtle.put("etab-ensprimaire-public-men-2.csv", "primaire.sparql");
+    	toTurtle.put("etab-ensseccollegial-public.csv", "college.sparql");
+    	toTurtle.put("etab-enssecqualifiant-public-men.csv","lycee.sparql");
     	
-    	toTurtle.put("etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv", "req2.sparql");
-    	toTurtle.put("etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv",  "req2.sparql");
-    	toTurtle.put("etablissements-de-formation-des-cadres-formation-scientifique-et-technique-enssup-2014.csv",  transform+"req2.sparql");
+    	toTurtle.put("etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv", "cadres.sparql");
+    	toTurtle.put("etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv",  "cadres.sparql");
+    	toTurtle.put("etablissements-de-formation-des-cadres-formation-scientifique-et-technique-enssup-2014.csv", "cadres.sparql");
     	
-    	toTurtle.put("liste-des-etablissements-prives-avril-men-2011.csv",  "req4.sparql");
+    	toTurtle.put("liste-des-etablissements-prives-avril-men-2011.csv",  "prives.sparql");
 //    	requestOnTTL.put(inputs+"liste-des-etablissements-publics-avril-2011-men.csv", "two");
 //    	requestOnTTL.put(inputs+"universites-marocaines-enssup-2014.csv", "two");
     }
@@ -86,6 +92,9 @@ public class Projet {
 	public static void main(String[] args) throws IOException {
 		System.out.println(Syntax.guessFileSyntax(transform+"req.sparql"));
 		
+		transformInputs();
+		
+		
 //		QueryExecutionFactory
 //		.create(
 //				QueryFactory.read(transform+"req.sparql"),
@@ -100,41 +109,52 @@ public class Projet {
 				.map(p -> ModelFactory.createDefaultModel().read(p.toString()))
 				.reduce((m1,m2)->  ModelFactory.createUnion(m1, m2))
 				.orElse(null);
+
+		OntModelSpec s = new OntModelSpec( OntModelSpec.OWL_MEM );
+		s.setDocumentManager( new OntDocumentManager("onto.xml") );
+		OntModel onto = ModelFactory.createOntologyModel( s ,data );
 		
+		
+//		InfModel inf = ModelFactory.createInfModel(
+//				null,  
+//				ModelFactory.createDefaultModel().read("onto.xml"),
+//				data);
+		
+		System.out.println("DataSize: "+data.size());
 
 		
 		// Execute every select 
 		Files.list(Paths.get(selects))
-				.map(path-> QueryFactory.read(path.toString()))
-				.forEach(query -> {
-					System.out.println("\n=============================SELECT============================\n"+query.getBaseURI());
-					System.out.println(query.toString(Syntax.defaultQuerySyntax));
-					QueryExecution qexec = QueryExecutionFactory.create(query,data) ;
-					
-					ResultSet results = qexec.execSelect() ;
-					
-					List<String> cols = results.getResultVars();
-					System.out.println("Variable availble : " + cols);
-					
-					while (results.hasNext()) {
-						QuerySolution binding = results.nextSolution();
-						String record = "";
-						for(String i : cols){
-							record += "  "+binding.get(i);
-						}
-					    System.out.println(record);
+			.map(path-> QueryFactory.read(path.toString()))
+			.forEach(query -> {
+				System.out.println("\n=============================SELECT============================\n"+query.getBaseURI());
+				System.out.println(query.toString(Syntax.defaultQuerySyntax));
+				QueryExecution qexec = QueryExecutionFactory.create(query,onto) ;
+				
+				ResultSet results = qexec.execSelect() ;
+				
+				List<String> cols = results.getResultVars();
+				System.out.println("Variable availble : " + cols);
+				
+				while (results.hasNext()) {
+					QuerySolution binding = results.nextSolution();
+					String record = "";
+					for(String i : cols){
+						record += "  "+binding.get(i);
 					}
-				});
+				    System.out.println(record);
+				}
+			});
 		
 		// Execute every ask 
 		Files.list(Paths.get(ask))
-				.map(path-> QueryFactory.read(path.toString()))
-				.forEach(query -> {
-					System.out.println("\n============================ASK=============================\n"+query.getBaseURI());
-					System.out.println(query.toString(Syntax.defaultQuerySyntax));
-					QueryExecution qexec = QueryExecutionFactory.create(query,data) ;
-					System.out.println("Result : "+qexec.execAsk()); 
-				});
+			.map(path-> QueryFactory.read(path.toString()))
+			.forEach(query -> {
+				System.out.println("\n============================ASK=============================\n"+query.getBaseURI());
+				System.out.println(query.toString(Syntax.defaultQuerySyntax));
+				QueryExecution qexec = QueryExecutionFactory.create(query,data) ;
+				System.out.println("Result : "+qexec.execAsk()); 
+			});
 
 		
 	}

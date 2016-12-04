@@ -1,0 +1,23 @@
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX : <http://www.data.gov.ma/Education#>
+SELECT  ?nbprivate ?nbPublic {
+  {
+	GRAPH <http://localhost:3030/Dataset/data/privateSchools>
+	{
+	SELECT ?s (count(distinct ?s) as ?nbprivate)
+	WHERE {
+	?s ?p ?o . 
+		}
+	}   }
+  UNION
+  {
+	GRAPH <http://localhost:3030/Dataset/data/publicSchools>
+	{
+	 SELECT (count(distinct ?s) as ?nbPublic)
+	 WHERE{
+		 ?s ?p ?o .
+	 }
+	}    }
+}

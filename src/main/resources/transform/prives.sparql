@@ -1,0 +1,28 @@
+PREFIX ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+
+# etablissement prives 
+#liste-des-etablissements-prives-avril-men-2011.csv
+#NOM_ETABL,NbreAnnexe,Adresse,Ville,TEL_ETAB,FAX_ETAB,e-mail,Région,Province,Commune
+
+
+
+CONSTRUCT {
+  ?URI a <http://schema.org/EducationalOrganization/>;
+    sch:name ?NOMFR;
+    sch:streetAddress ?addfr;
+    sch:telephone ?TEL_ETAB;
+    sch:addressLocality ?Province;
+    sch:addressRegion ?Région;
+    sch:email ?e-mail;
+    sch:fax ?FAX_ETAB;
+    <http://www.data.gov.ma/Education#isPublic> "false"^^xsd:boolean;
+} 
+
+WHERE { 
+	BIND (URI(CONCAT('http://www.data.gov.ma/Education#', REPLACE(?NOM_ETABL,"\\s","_"), ?Province)) AS ?URI)
+	BIND (STRLANG(?NOM_ETABL, 'fr-FR') AS ?NOMFR)
+	BIND (STRLANG(?Adresse, 'fr-FR') AS ?addfr)
+}
