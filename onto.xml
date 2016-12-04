@@ -1,47 +1,45 @@
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:sch="http://schema.org/">
+
+<!-- OWL Header  -->
+<owl:Ontology rdf:about="http://www.data.gov.ma/Education/">
+<dc:title>Moroccan Educational dataset</dc:title>
+<dc:description>dataset about moroccan educational schools system</dc:description>
+</owl:Ontology>
+
+<!-- OWL classes and subclasses -->
+<owl:Class rdf:about="http://schema.org/EducationalOrganization/">
+<rdfs:label>Educational Organization</rdfs:label>
+<rdfs:comment>the educational organization, types of schools</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/CollegeOrUniversity">
+<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/HighSchool">
+<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/MiddleSchool">
+<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/School">
+<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+</owl:Class>
 
 
-<rdf:RDF xml:base="http://www.example.org/uni" 
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-    xmlns:u="http://www.example.org/uni#">
 
-<!-- 
-	<rdfs:Class rdf:ID="public" rdfs:label="Public School">
-		<rdfs:comment>
-		This is a public schoool
-		</rdfs:comment>
-		<rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
-	</rdfs:Class>
+<!-- OWL Propreties -->
+<owl:DatatypeProperty rdf:about="isPublic">
+<rdfs:domain rdf:resource="EducationalOrganization" />
+<rdfs:range rdf:resource="&xsd;boolean" />
+</owl:DatatypeProperty>
 
-	<rdfs:Class rdf:ID="private" rdfs:label="Private School">
-		<rdfs:comment>
-		This is a private schoool
-		</rdfs:comment>
-		<rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
-	</rdfs:Class>
-	
-	 -->
-
-	<!-- ================================= Properties  ======================================= -->
-	
-	<rdf:Property rdf:ID="isPublic">
-	    <rdfs:label>isPublic</rdfs:label>
-		<rdfs:domain rdf:resource="#EducationalOrganization"/>
-		<rdfs:range rdf:datatype="&xsd;boolean"/>
-	</rdf:Property>
-	
-	
-	
-	<!-- 
-	<owl:ObjectProperty rdf:ID="isPrivate">
-        <rdfs:subPropertyOf rdf:resource=""/>
-    </owl:ObjectProperty>
-	 -->
-	
-	<!-- ================================= Data  =======================================-->
-
-	
 
 </rdf:RDF>
-
 
