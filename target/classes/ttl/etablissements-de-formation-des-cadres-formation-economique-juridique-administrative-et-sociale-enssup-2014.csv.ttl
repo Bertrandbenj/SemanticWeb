@@ -1,0 +1,142 @@
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix :  <http://www.data.gov.ma/data/fr/group/education/ontology.owl#> .
+@prefix ex:  <http://ex.org/a#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix sch:  <http://schema.org/> .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_de_Commerce_et_d'Administration_des_EntreprisesCasablanca>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur de Commerce et d'Administration des Entreprises"@fr-FR ;
+        sch:streetAddress    "Km 9,5 Route de Nouasseur, Oasis BP : 8114 - Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 33 54 83" ;
+        sch:faxNumber        "(+212) 05 22 33 54 95" ;
+        sch:addressLocality  "Casablanca" ;
+        :isPublic            true ;
+        dbo:Website          "www.groupeiscae.ma" .
+
+<http://www.data.gov.ma/Education#Dar_El_Hadith_El_HassaniaRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Dar El Hadith El Hassania"@fr-FR ;
+        sch:streetAddress    "2, Rue du Dahomet, BP : 7844 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 72 25 87" ;
+        sch:faxNumber        "(+212) 05 37 72 62 01" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "www.edhh.org/" .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Nationale_d'AdministrationRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Nationale d'Administration"@fr-FR ;
+        sch:streetAddress    "Av. de la Victoire - BP 165 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 72 44 00" ;
+        sch:faxNumber        "(+212) 05 37 73 09 29" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "w3.ena.ac.ma/" .
+
+<http://www.data.gov.ma/Education#Institut_National_d'Administration_SanitaireRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut National d'Administration Sanitaire"@fr-FR ;
+        sch:streetAddress    "Rue Lamfadel Cherkaoui, Madinat Al Irfane - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 68 31 61" ;
+        sch:faxNumber        "(+212) 05 37 68 31 62" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Institut_National_d'Am%C3%A9nagement_et_d'UrbanismeRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut National d'Aménagement et d'Urbanisme"@fr-FR ;
+        sch:streetAddress    "Av. Allal El Fassi B.P 6215 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 16 24" ;
+        sch:faxNumber        "(+212) 05 37 77 50 09" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "www.inau.ac.ma" .
+
+<http://www.data.gov.ma/Education#Institut_National_des_Sciences_de_l'Arch%C3%A9ologie_et_du_PatrimoineRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut National des Sciences de l'Archéologie et du Patrimoine"@fr-FR ;
+        sch:streetAddress    "Av. John Kennedy, Route des Zaers, BP : 503 Souissi -Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 75 09 61" ;
+        sch:faxNumber        "(+212) 05 37 75 08 84" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_de_l'AdmistrationRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur de l'Admistration"@fr-FR ;
+        sch:streetAddress    "N�� 44 - Avenue Ibn Toumert - BP 2659 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 26 36 43" ;
+        sch:faxNumber        "(+212) 05 37 26 02 23" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "www.isa.ma/" .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_d'Art_Dramatique_et_d'Animation_CulturelleRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur d'Art Dramatique et d'Animation Culturelle"@fr-FR ;
+        sch:streetAddress    "Chriaa Al Mansour Eddahbi, BP : 1355- Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 72 17 02" ;
+        sch:faxNumber        "(+212) 05 37 70 34 23" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_de_l'Information_et_de_la_CommunicationRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur de l'Information et de la Communication"@fr-FR ;
+        sch:streetAddress    "Avenue Allal Al Fassi, BP : 6205 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 33 40" ;
+        sch:faxNumber        "(+212) 05 37 77 27 89" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "www.isic.ma/" .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_de_la_MagistratureRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur de la Magistrature"@fr-FR ;
+        sch:streetAddress    "225, Av. Mehdi Ben Berka Souissi-Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 75 39 16" ;
+        sch:faxNumber        "(+212) 05 37 75 49 02" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true ;
+        dbo:Website          "www.ism.ma/" .
+
+<http://www.data.gov.ma/Education#Institut_Royal_de_Formation_des_Cadres_de_la_Jeunesse_et_des_SportsSal%C3%A9>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Royal de Formation des Cadres de la Jeunesse et des Sports"@fr-FR ;
+        sch:streetAddress    "Institut National des Sports Moulay Rachid - Km 12, Salé"@fr-FR ;
+        sch:telephone        "(+212) 05 37 83 16 57" ;
+        sch:faxNumber        "(+212) 05 37 83 16 56" ;
+        sch:addressLocality  "Salé" ;
+        :isPublic            true ;
+        dbo:Website          "www.irfc.ma" .
+
+<http://www.data.gov.ma/Education#Institut_National_de_l'Action_SocialeTanger>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut National de l'Action Sociale"@fr-FR ;
+        sch:streetAddress    "Rue Hariri, BP : 1168 - Tanger"@fr-FR ;
+        sch:telephone        "(+212) 05 39 94 09 71" ;
+        sch:faxNumber        "(+212) 05 39 94 07 96" ;
+        sch:addressLocality  "Tanger" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Institut_Sup%C3%A9rieur_International_du_TourismeTanger>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut Supérieur International du Tourisme"@fr-FR ;
+        sch:streetAddress    "Baie de Tanger, BP : 1651 -Tanger"@fr-FR ;
+        sch:telephone        "(+212) 05 39 94 59 04" ;
+        sch:faxNumber        "(+212) 05 39 94 59 05" ;
+        sch:addressLocality  "Tanger" ;
+        :isPublic            true ;
+        dbo:Website          "www.isitt.ma/" .
+
+<http://www.data.gov.ma/Education#Institut_National_des_Beaux_ArtsT%C3%A9touan>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Institut National des Beaux Arts"@fr-FR ;
+        sch:streetAddress    "Av. Med V, Cité Scolaire, BP : 89 - Tétouan"@fr-FR ;
+        sch:telephone        "(+212) 05 39 96 15 45" ;
+        sch:faxNumber        "(+212) 05 39 96 42 92" ;
+        sch:addressLocality  "Tétouan" ;
+        :isPublic            true ;
+        dbo:Website          "www.inbatetouan.com/" .

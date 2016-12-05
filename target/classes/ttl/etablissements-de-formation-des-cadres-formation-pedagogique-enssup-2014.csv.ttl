@@ -1,0 +1,204 @@
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix :  <http://www.data.gov.ma/data/fr/group/education/ontology.owl#> .
+@prefix ex:  <http://ex.org/a#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix sch:  <http://schema.org/> .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-CasablancaCasablanca>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Casablanca"@fr-FR ;
+        sch:streetAddress    "Av. Stendhal Derb Ghellef - Casa-Anfa Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 25 40 37" ;
+        sch:faxNumber        "(+212) 05 22 25 92 77" ;
+        sch:addressLocality  "Casablanca" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-CasablancaCasablanca>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Casablanca"@fr-FR ;
+        sch:streetAddress    "Route d'El Jadida, BP : 50069, Ghandi - Casablanca"@fr-FR ;
+        sch:telephone        "(+212) 05 22 23 22 77" ;
+        sch:faxNumber        "(+212) 05 22 98 53 26" ;
+        sch:addressLocality  "Casablanca" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-El_JadidaEl%20Jadida>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -El Jadida"@fr-FR ;
+        sch:streetAddress    "Route de l'Aéroport BP : 291-El Jadida"@fr-FR ;
+        sch:telephone        "(+212) 05 23 34 27 68" ;
+        sch:faxNumber        "(+212) 05 23 35 05 20" ;
+        sch:addressLocality  "El Jadida" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-F%C3%A8sF%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Fès"@fr-FR ;
+        sch:streetAddress    "Rue de Koweit, Ville Nouvelle, BP : 49-Fès"@fr-FR ;
+        sch:telephone        "(+212) 05 35 65 43 01" ;
+        sch:faxNumber        "(+212) 05 35 65 48 90" ;
+        sch:addressLocality  "Fès" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-F%C3%A8sF%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Fès"@fr-FR ;
+        sch:streetAddress    "Kariat Ben Souda Ahouaz, Oued Fès - Fès"@fr-FR ;
+        sch:telephone        "(+212) 05 35 65 50 83" ;
+        sch:faxNumber        "(+212) 05 35 65 50 69" ;
+        sch:addressLocality  "Fès" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-K%C3%A9nitraK%C3%A9nitra>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Kénitra"@fr-FR ;
+        sch:streetAddress    "Rue Abdelaziz Boutaleb, 23 mimousa Kénitra"@fr-FR ;
+        sch:telephone        "(+212) 05 37 37 27 79" ;
+        sch:faxNumber        "(+212) 05 37 37 27 41" ;
+        sch:addressLocality  "Kénitra" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-MarrakechMarrakech>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Marrakech"@fr-FR ;
+        sch:streetAddress    "BP : 797 Hay Hassani Menara - Marrakech"@fr-FR ;
+        sch:telephone        "(+212) 05 24 34 22 59" ;
+        sch:faxNumber        "(+212) 05 24 34 22 59" ;
+        sch:addressLocality  "Marrakech" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-MarrakechMarrakech>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Marrakech"@fr-FR ;
+        sch:streetAddress    "Route d'Essaouira, BP 2400. Marrakech"@fr-FR ;
+        sch:telephone        "(+212) 05 24 34 01 25" ;
+        sch:faxNumber        "(+212) 05 24 34 22 87" ;
+        sch:addressLocality  "Marrakech" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-Mekn%C3%A8sMekn%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Meknès"@fr-FR ;
+        sch:streetAddress    "EL Menzeh, BP : 255, Bel Air - Meknès"@fr-FR ;
+        sch:telephone        "(+212) 05 35 52 34 53" ;
+        sch:faxNumber        "(+212) 05 35 52 34 53" ;
+        sch:addressLocality  "Meknès" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-Mekn%C3%A8sMekn%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Meknès"@fr-FR ;
+        sch:streetAddress    "Av. Hassan II Km 4, Route de Casa - Meknès"@fr-FR ;
+        sch:telephone        "(+212) 05 37 69 19 68" ;
+        sch:faxNumber        "(+212) 05 37 69 27 96" ;
+        sch:addressLocality  "Meknès" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieure_de_l'Enseignement_Technique_-MohammadiaMohammadia>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieure de l'Enseignement Technique -Mohammadia"@fr-FR ;
+        sch:streetAddress    "BD Hassan II BP 159 Mohammadia"@fr-FR ;
+        sch:telephone        "(+212) 05 23 32 22 20" ;
+        sch:faxNumber        "(+212) 05 23 32 25 46" ;
+        sch:addressLocality  "Mohammadia" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-OujdaOujda>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Oujda"@fr-FR ;
+        sch:streetAddress    "Hay Al Massira, Oujda"@fr-FR ;
+        sch:telephone        "(+212) 05 36 68 35 31" ;
+        sch:faxNumber        "(+212) 05 36 68 47 05" ;
+        sch:addressLocality  "Oujda" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_de_Formation_des_Inspecteurs_de_l'EnseignementRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre de Formation des Inspecteurs de l'Enseignement"@fr-FR ;
+        sch:streetAddress    "Rue Ibn Aïcha Bab Tamesna BP : 4543 -Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 69 01 96" ;
+        sch:faxNumber        "(+212) 05 37 69 05 03" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_d'Orientation_et_de_Planification_P%C3%A9dagogiqueRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre d'Orientation et de Planification Pédagogique"@fr-FR ;
+        sch:streetAddress    "Av. Allal El Fassi, Hay Riad, BP : 6222 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 71 44 51" ;
+        sch:faxNumber        "(+212) 05 37 71 44 50" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-RabatRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Rabat"@fr-FR ;
+        sch:streetAddress    "Avenue Allal Al Fassi, BP : 6210"@fr-FR ;
+        sch:telephone        "(+212) 05 37 77 33 32" ;
+        sch:faxNumber        "(+212) 05 37 77 33 28" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-RabatRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Rabat"@fr-FR ;
+        sch:streetAddress    "Av. Mohamed Bel Hassan El Ouazzani, BP : 5118. Takaddoum - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 75 12 29" ;
+        sch:faxNumber        "(+212) 05 37 75 00 47" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieure_de_l'Enseignement_Technique_-RabatRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieure de l'Enseignement Technique -Rabat"@fr-FR ;
+        sch:streetAddress    "Av. Allal El Fassi Hay Riad, BP : 6207 - Rabat"@fr-FR ;
+        sch:telephone        "(+212) 05 37 75 22 61" ;
+        sch:faxNumber        "(+212) 05 37 75 00 47" ;
+        sch:addressLocality  "Rabat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-SafiSafi>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Safi"@fr-FR ;
+        sch:streetAddress    "Boulevard Ibn Batouta, BP : 257 - Safi"@fr-FR ;
+        sch:telephone        "(+212) 05 24 62 43 30" ;
+        sch:faxNumber        "(+212) 05 24 62 43 30" ;
+        sch:addressLocality  "Safi" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-SettatSettat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Settat"@fr-FR ;
+        sch:streetAddress    "Hay El Farah II, BP : 578 - Settat"@fr-FR ;
+        sch:telephone        "(+212) 05 23 72 08 93" ;
+        sch:faxNumber        "(+212) 05 23 72 08 93" ;
+        sch:addressLocality  "Settat" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-TangerTanger>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Tanger"@fr-FR ;
+        sch:streetAddress    "Avenue My Abdelaziz Souani, BP : 3117 - Tanger"@fr-FR ;
+        sch:telephone        "(+212) 05 39 94 24 81" ;
+        sch:faxNumber        "(+212) 05 39 94 37 42" ;
+        sch:addressLocality  "Tanger" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#Centre_P%C3%A9dagogique_R%C3%A9gional_-TazaTaza>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "Centre Pédagogique Régional -Taza"@fr-FR ;
+        sch:streetAddress    "Km 1 Route d'Oujda, BP : 1978 - Taza"@fr-FR ;
+        sch:telephone        "(+212) 05 35 21 13 39" ;
+        sch:faxNumber        "(+212) 05 35 21 13 39" ;
+        sch:addressLocality  "Taza" ;
+        :isPublic            true .
+
+<http://www.data.gov.ma/Education#%C3%89cole_Normale_Sup%C3%A9rieur_-T%C3%A9touanT%C3%A9touan>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  sch:CollegeOrUniversity ;
+        sch:name             "École Normale Supérieur -Tétouan"@fr-FR ;
+        sch:streetAddress    "Avenue Moulay Hassan, BP : 209 Martil"@fr-FR ;
+        sch:telephone        "(+212) 05 39 97 90 48" ;
+        sch:faxNumber        "(+212) 05 39 97 91 80" ;
+        sch:addressLocality  "Tétouan" ;
+        :isPublic            true .

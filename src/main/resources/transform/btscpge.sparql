@@ -4,7 +4,7 @@ PREFIX sch: <http://schema.org/>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX void: <http://schema.org/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX : <http://www.data.gov.ma/Education#>
+PREFIX : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
 
 #etab-bts-public-men-2013-2014.csv
 #etab-cpge-public-men-2013-2014.csv

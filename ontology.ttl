@@ -6,26 +6,26 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbp: <http://dbpedia.org/property/> .
 @prefix sch: <http://schema.org/> .
-@prefix : <http://www.data.gov.ma/ontology.owl#> .
+@prefix : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#> .
 
 
-<http://www.data.gov.ma/ontology.owl> rdf:type owl:Ontology .
+<http://www.data.gov.ma/data/fr/group/education/ontology.owl#> rdf:type owl:Ontology .
 
 sch:EducationalOrganisation rdf:type rdfs:Class.
 
 
-sch:CollegeOrUniversity rdfs:subClassOf :EducationalOrganisation;
+sch:CollegeOrUniversity rdfs:subClassOf sch:EducationalOrganisation;
 					 rdfs:label "College Or University"@en .
 					
 
-sch:HighSchool rdfs:subClassOf :EducationalOrganisation;
+sch:HighSchool rdfs:subClassOf sch:EducationalOrganisation;
 			rdfs:label "High School"@en .
 
 
-sch:MiddleSchool rdfs:subClassOf :EducationalOrganisation;
+sch:MiddleSchool rdfs:subClassOf sch:EducationalOrganisation;
 			  rdfs:label "Middle School"@en .
 
-sch:School rdfs:subClassOf :EducationalOrganisation;
+sch:School rdfs:subClassOf sch:EducationalOrganisation;
 			  rdfs:label "School"@en .
 
 

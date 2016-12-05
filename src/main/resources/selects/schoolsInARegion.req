@@ -3,7 +3,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sch: <http://schema.org/>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX : <http://www.data.gov.ma/Education#>
+PREFIX : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+
+
 SELECT (str(?name2)AS ?name) (str(?address2) AS ?address) ?city ?region ?isPublic
 WHERE { 	   
 	?x sch:name ?name2;

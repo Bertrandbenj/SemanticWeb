@@ -1,4 +1,4 @@
-@prefix :  <http://www.data.gov.ma/Education#> .
+@prefix :  <http://www.data.gov.ma/data/fr/group/education/ontology.owl#> .
 @prefix ex:  <http://ex.org/a#> .
 @prefix void:  <http://schema.org/> .
 @prefix xml:  <http://www.w3.org/XML/1998/namespace> .
@@ -6,7 +6,8 @@
 @prefix sch:  <http://schema.org/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-:OMAR_ALKHIYYAMRabat  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#OMAR_ALKHIYYAMRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "OMAR ALKHIYYAM"@fr-FR ;
         sch:streetAddress    "AV ABDELOIHAD ELMARRAKECHI READ AGDAL"@fr-FR ;
         sch:telephone        "0660958229" ;
@@ -15,7 +16,8 @@
         sch:addressRegion    "Rabat - Sale - Zemmour -Zaer" ;
         :isPublic            true .
 
-:MOULAY_YOUSSEFRabat  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#MOULAY_YOUSSEFRabat>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "MOULAY YOUSSEF"@fr-FR ;
         sch:streetAddress    "AV MED 5 HASSANE"@fr-FR ;
         sch:telephone        "0660958582" ;
@@ -24,7 +26,7 @@
         sch:addressRegion    "Rabat - Sale - Zemmour -Zaer" ;
         :isPublic            true .
 
-:SALMAN_EL_FARISSISalé
+<http://www.data.gov.ma/Education#SALMAN_EL_FARISSISal%C3%A9>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "SALMAN EL FARISSI"@fr-FR ;
         sch:streetAddress    "AV ALMASSIRA ALKHADRA COMMUNE DE BETTANA"@fr-FR ;
@@ -44,7 +46,7 @@
         sch:addressRegion    "Grand Casablanca" ;
         :isPublic            true .
 
-:LYCEE_TECHNIQUEMohammadia
+<http://www.data.gov.ma/Education#LYCEE_TECHNIQUEMohammadia>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "LYCEE TECHNIQUE"@fr-FR ;
         sch:streetAddress    "BD HASSAN II MOHAMMEDIA"@fr-FR ;
@@ -54,7 +56,8 @@
         sch:addressRegion    "Grand Casablanca" ;
         :isPublic            true .
 
-:MOULAY_IDRISSFès  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#MOULAY_IDRISSF%C3%A8s>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "MOULAY IDRISS"@fr-FR ;
         sch:streetAddress    "BOUJLOUD  FESMEDINA"@fr-FR ;
         sch:telephone        "0535633160" ;
@@ -63,7 +66,8 @@
         sch:addressRegion    "Fès - Boulmane" ;
         :isPublic            true .
 
-:MOULAY_ISMAILMeknes  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#MOULAY_ISMAILMeknes>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "MOULAY ISMAIL"@fr-FR ;
         sch:streetAddress    "rue wahhabi ali ben jilali vn meknes"@fr-FR ;
         sch:telephone        "0535520217" ;
@@ -72,7 +76,7 @@
         sch:addressRegion    "Meknès - Tafilalet" ;
         :isPublic            true .
 
-:OMAR_IBN_AL_KHATTABMeknes
+<http://www.data.gov.ma/Education#OMAR_IBN_AL_KHATTABMeknes>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "OMAR IBN AL KHATTAB"@fr-FR ;
         sch:streetAddress    "BD ABDELKARIM AL KHATTABI SBATA C.M.MEKNES"@fr-FR ;
@@ -92,7 +96,7 @@
         sch:addressRegion    "l'Oriental" ;
         :isPublic            true .
 
-:Lycée_Qualifiant_Lissane_Eddine_Ibn_Al_KhatibLaayoune
+<http://www.data.gov.ma/Education#Lyc%C3%A9e_Qualifiant_Lissane_Eddine_Ibn_Al_KhatibLaayoune>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "Lycée Qualifiant Lissane Eddine Ibn Al Khatib"@fr-FR ;
         sch:streetAddress    "PLACE OUM SAADAVENUE HASSAN 1IER"@fr-FR ;
@@ -121,7 +125,8 @@
         sch:addressRegion    "Doukala - Abda" ;
         :isPublic            true .
 
-:IBN_TAHIRErrachidia  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#IBN_TAHIRErrachidia>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "IBN TAHIR"@fr-FR ;
         sch:streetAddress    "CITE BOUTALAMINE ERRACHIDIA"@fr-FR ;
         sch:telephone        "0535572451" ;
@@ -130,7 +135,8 @@
         sch:addressRegion    "Meknès - Tafilalet" ;
         :isPublic            true .
 
-:BAB_SAHARAGuelmim  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#BAB_SAHARAGuelmim>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "BAB SAHARA"@fr-FR ;
         sch:streetAddress    "AVENUE MOHAMED 6"@fr-FR ;
         sch:telephone        "0528872109" ;
@@ -138,7 +144,7 @@
         sch:addressRegion    "Guelmim - Es-smara" ;
         :isPublic            true .
 
-:ABDELKRIM_AL_KHATTABINador
+<http://www.data.gov.ma/Education#ABDELKRIM_AL_KHATTABINador>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "ABDELKRIM AL KHATTABI"@fr-FR ;
         sch:streetAddress    "71 NAHJ AL AMIR SIDI MOHAMED NADOR"@fr-FR ;
@@ -148,7 +154,7 @@
         sch:addressRegion    "l'Oriental" ;
         :isPublic            true .
 
-:lycee_TECHNIQUESettat
+<http://www.data.gov.ma/Education#lycee_TECHNIQUESettat>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "lycee TECHNIQUE"@fr-FR ;
         sch:streetAddress    "HAY EL AMAL COMMUNE SETTAT"@fr-FR ;
@@ -168,7 +174,7 @@
         sch:addressRegion    "Tanger - Tetouan" ;
         :isPublic            true .
 
-:IBNOU_EL_BANNaE_CLASSES_PREPARATOIRESKhouribga
+<http://www.data.gov.ma/Education#IBNOU_EL_BANNaE_CLASSES_PREPARATOIRESKhouribga>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "IBNOU EL BANNaE CLASSES PREPARATOIRES"@fr-FR ;
         sch:streetAddress    "BOULEVARD  IBRAHIM ERROUDANI"@fr-FR ;
@@ -188,7 +194,8 @@
         sch:addressRegion    "Oued Ed-dhab - Lagouira" ;
         :isPublic            true .
 
-:al_maamouraKenitra  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
+<http://www.data.gov.ma/Education#al_maamouraKenitra>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "al maamoura"@fr-FR ;
         sch:streetAddress    "KENITRA"@fr-FR ;
         sch:telephone        "0537378637" ;
@@ -196,7 +203,7 @@
         sch:addressRegion    "Gharb - Chrarda - Beni Hssen" ;
         :isPublic            true .
 
-:CHARIF_AL_IDRRISSITaza
+<http://www.data.gov.ma/Education#CHARIF_AL_IDRRISSITaza>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "CHARIF AL IDRRISSI"@fr-FR ;
         sch:streetAddress    "HAY EL MSALA TAZA OULIA"@fr-FR ;
@@ -206,7 +213,7 @@
         sch:addressRegion    "Taza - Al Hoceima - Taounate" ;
         :isPublic            true .
 
-:AMIR_MOULAY_ABDELLAHSafi
+<http://www.data.gov.ma/Education#AMIR_MOULAY_ABDELLAHSafi>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://schema.org/CollegeOrUniversity/> ;
         sch:name             "AMIR MOULAY ABDELLAH"@fr-FR ;
         sch:streetAddress    "Q SIDI ABDELKRIM SAFI"@fr-FR ;

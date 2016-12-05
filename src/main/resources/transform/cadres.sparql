@@ -3,7 +3,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sch: <http://schema.org/>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX : <http://www.data.gov.ma/Education#>
+PREFIX : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
 
 #etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv
 #etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv
@@ -24,7 +24,7 @@ CONSTRUCT {
 } 
 
 WHERE { 
-	BIND (URI(CONCAT('http://www.data.gov.ma/Education#', REPLACE(?Nom,"\\s","_"), ?Vile)) AS ?URI)
+	BIND (URI(CONCAT('http://www.data.gov.ma/Education#', REPLACE(?Nom,"\\s","_"), ?Ville)) AS ?URI)
 	BIND (STRLANG(?Nom, 'fr-FR') AS ?NOMFR)
 	BIND (STRLANG(?Adresse, 'fr-FR') AS ?ADDFR)
 
