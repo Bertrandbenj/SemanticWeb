@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix sch: <http://schema.org/> .
+@prefix : <http://www.data.gov.ma/ontology.owl#> .
+
+
+<http://www.data.gov.ma/ontology.owl> rdf:type owl:Ontology .
+
+sch:EducationalOrganisation rdf:type rdfs:Class.
+
+
+sch:CollegeOrUniversity rdfs:subClassOf :EducationalOrganisation;
+					 rdfs:label "College Or University"@en .
+					
+
+sch:HighSchool rdfs:subClassOf :EducationalOrganisation;
+			rdfs:label "High School"@en .
+
+
+sch:MiddleSchool rdfs:subClassOf :EducationalOrganisation;
+			  rdfs:label "Middle School"@en .
+
+sch:School rdfs:subClassOf :EducationalOrganisation;
+			  rdfs:label "School"@en .
+
+
+:isPublic rdf:type owl:ObjectProperty;
+			rdfs:domain :EducationalOrganisation;
+			rdfs:range xsd:boolean.
+			
+#sameAs implementation
+
+sch:addressLocality owl:sameAs dbo:city.
+
+sch:telephone owl:sameAs dbp:phoneNumber .
+
+sch:name owl:sameAs dbp:name .
+
+sch:streetAddress owl:sameAs dbo:address .
