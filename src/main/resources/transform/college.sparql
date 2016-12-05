@@ -2,6 +2,7 @@ PREFIX ex: <http://ex.org/a#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sch: <http://schema.org/>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX : <http://www.data.gov.ma/Education#>
 
 #scolaire publique 
 
@@ -19,7 +20,7 @@ CONSTRUCT {
     sch:telephone ?TELEPHONE;
     sch:addressLocality ?PROVINCE;
     sch:addressRegion ?REGION;
-    <http://www.data.gov.ma/Education#isPublic> "true"^^xsd:boolean;
+    :isPublic "true"^^xsd:boolean;
 } 
 
 WHERE { 

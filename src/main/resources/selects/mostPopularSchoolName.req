@@ -1,0 +1,15 @@
+PREFIX  ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX : <http://www.data.gov.ma/Education#>
+SELECT (COUNT(?x) as ?cnt) ?name
+WHERE { 	   
+	?x sch:name ?name;	
+	FILTER( lang(?name)="fr-FR" )
+}
+GROUP BY ?name
+ORDER BY DESC(?cnt)
+
+LIMIT 10
