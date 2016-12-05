@@ -1,0 +1,13 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix dbo: <http://dbpedia.org/ontology/> 
+prefix dbp: <http://dbpedia.org/property/> 
+prefix sch: <http://schema.org/> 
+
+SELECT
+
+
+WHERE
+{
+
+
+}
