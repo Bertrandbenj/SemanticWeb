@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#> .
+	                                            
+:EducationalOrganisation a void:Dataset;
+    dcterms:title "MorrocanEducationalOrganisation"^^xsd:string;
+    dcterms:description "RDF data extracted from data.gov.ma about Education in Morocco";
+    dcterms:contributor :BELASSAL_Salma;
+    dcterms:contributor :BERTRAND_Benjamin;
+    dcterms:contributor :FIDIMIHAJAMANANA_Sitraka;
+    dcterms:source <http://www.data.gov.ma/data/fr/group/education>;
+    dcterms:modified "2016-12-05"^^xsd:date.
+
+:BELASSAL_Salma rdf:type foaf:Person;
+    rdfs:label "BELASSAL Salma" .
+    
+:BERTRAND_Benjamin  rdf:type foaf:Person;
+    rdfs:label "BERTRAND Benjamin" .
+
+:FIDIMIHAJAMANANA_Sitraka  rdf:type foaf:Person;
+    rdfs:label "FIDIMIHAJAMANANA Sitraka" .
