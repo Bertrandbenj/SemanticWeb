@@ -1,45 +1,47 @@
 <rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-xmlns:owl="http://www.w3.org/2002/07/owl#"
-xmlns:sch="http://schema.org/">
-
-<!-- OWL Header  -->
-<owl:Ontology rdf:about="http://www.data.gov.ma/Education/">
-<dc:title>Moroccan Educational dataset</dc:title>
-<dc:description>dataset about moroccan educational schools system</dc:description>
-</owl:Ontology>
-
-<!-- OWL classes and subclasses -->
-<owl:Class rdf:about="http://schema.org/EducationalOrganization/">
-<rdfs:label>Educational Organization</rdfs:label>
-<rdfs:comment>the educational organization, types of schools</rdfs:comment>
-</owl:Class>
-
-<owl:Class rdf:about="http://schema.org/CollegeOrUniversity">
-<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
-</owl:Class>
-
-<owl:Class rdf:about="http://schema.org/HighSchool">
-<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
-</owl:Class>
-
-<owl:Class rdf:about="http://schema.org/MiddleSchool">
-<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
-</owl:Class>
-
-<owl:Class rdf:about="http://schema.org/School">
-<rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
-</owl:Class>
-
-
-
-<!-- OWL Propreties -->
-<owl:DatatypeProperty rdf:about="isPublic">
-<rdfs:domain rdf:resource="EducationalOrganization" />
-<rdfs:range rdf:resource="&xsd;boolean" />
-</owl:DatatypeProperty>
-
-
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://schema.org/EducationalOrganization"/>
+  <owl:Class rdf:about="http://schema.org/HighSchool">
+    <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://schema.org/MiddleSchool">
+    <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://schema.org/School">
+    <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://schema.org/CollegeOrUniversity">
+    <rdfs:subClassOf rdf:resource="http://schema.org/EducationalOrganization"/>
+  </owl:Class>
+  <rdf:Property rdf:about="http://schema.org/name">
+    <owl:sameAs rdf:resource="http://dbpedia.org/property/name"/>
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf1schema#Literal"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://schema.org/addressLocality">
+    <owl:sameAs rdf:resource="http://dbpedia.org/ontology/city"/>
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf1schema#Literal"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://schema.org/addressRegion">
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf1schema#Literal"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.data.gov.ma/data/fr/group/education/ontology.owl#isPublic">
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://schema.org/streetAddress">
+    <owl:sameAs rdf:resource="http://dbpedia.org/ontology/address"/>
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf1schema#Literal"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://schema.org/telephone">
+    <owl:sameAs rdf:resource="http://dbpedia.org/property/phoneNumber"/>
+    <rdfs:domain rdf:resource="http://schema.org/EducationalOrganization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf1schema#Literal"/>
+  </rdf:Property>
 </rdf:RDF>
-

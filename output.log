@@ -1,0 +1,212 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+symbol:http://jena.hpl.hp.com/2003/07/query/SPARQL_11
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/lycee.sparql src/main/resources/input/etab-enssecqualifiant-public-men.csv > src/main/resources/ttl/etab-enssecqualifiant-public-men.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/btscpge.sparql src/main/resources/input/etab-cpge-public-men-2013-2014.csv > src/main/resources/ttl/etab-cpge-public-men-2013-2014.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/cadres.sparql src/main/resources/input/etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv > src/main/resources/ttl/etablissements-de-formation-des-cadres-formation-pedagogique-enssup-2014.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/cadres.sparql src/main/resources/input/etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv > src/main/resources/ttl/etablissements-de-formation-des-cadres-formation-economique-juridique-administrative-et-sociale-enssup-2014.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/prives.sparql src/main/resources/input/liste-des-etablissements-prives-avril-men-2011.csv > src/main/resources/ttl/liste-des-etablissements-prives-avril-men-2011.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/btscpge.sparql src/main/resources/input/etab-bts-public-men-2013-2014.csv > src/main/resources/ttl/etab-bts-public-men-2013-2014.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/college.sparql src/main/resources/input/etab-ensseccollegial-public.csv > src/main/resources/ttl/etab-ensseccollegial-public.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/cadres.sparql src/main/resources/input/etablissements-de-formation-des-cadres-formation-scientifique-et-technique-enssup-2014.csv > src/main/resources/ttl/etablissements-de-formation-des-cadres-formation-scientifique-et-technique-enssup-2014.csv.ttl
+Exec : ~/tarql/target/appassembler/bin/tarql src/main/resources/transform/primaire.sparql src/main/resources/input/etab-ensprimaire-public-men-2.csv > src/main/resources/ttl/etab-ensprimaire-public-men-2.csv.ttl
+DataSize: 116081
+
+
+ ====== Processing SELECT :src/main/resources/selects/all.req ====== 
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  :     <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+PREFIX  sch:  <http://schema.org/>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+
+SELECT  ?s ?p ?o
+WHERE
+  { ?s  ?p  ?o }
+LIMIT   10
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| s                                                                      | p                                                    | o                                                                      |
+==========================================================================================================================================================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>                      | <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    | <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>                  |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>                      | <http://www.w3.org/2000/01/rdf-schema#domain>        | <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>                      |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>                      | <http://www.w3.org/2000/01/rdf-schema#range>         | <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>                      |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>                      | <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> | <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>                      |
+| <http://www.data.gov.ma/data/fr/group/education/ontology.owl#isPublic> | <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> | <http://www.data.gov.ma/data/fr/group/education/ontology.owl#isPublic> |
+| <http://schema.org/addressLocality>                                    | <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> | <http://schema.org/addressLocality>                                    |
+| <http://www.w3.org/2000/01/rdf1schema#Literal>                         | <http://www.w3.org/2000/01/rdf-schema#subClassOf>    | <http://www.w3.org/2000/01/rdf-schema#Resource>                        |
+| <http://www.w3.org/2000/01/rdf1schema#Literal>                         | <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    | <http://www.w3.org/2000/01/rdf-schema#Class>                           |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>                      | <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    | <http://www.w3.org/2000/01/rdf-schema#Class>                           |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>                      | <http://www.w3.org/2000/01/rdf-schema#subClassOf>    | <http://www.w3.org/2000/01/rdf-schema#Resource>                        |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ ====== Processing SELECT :src/main/resources/selects/ibnkhaldounemystery.req ====== 
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  :     <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+PREFIX  ex:   <http://ex.org/a#>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  sch:  <http://schema.org/>
+
+SELECT  (COUNT(?x) AS ?cnt) ?name ?name2
+WHERE
+  { ?x  sch:name  ?name ;
+        sch:name  ?name2
+    FILTER ( ( ( lang(?name) = "fr-FR" ) && ( lang(?name2) = "ar-AR" ) ) && regex(?name, "IBN KHALDOUNE", "i") )
+  }
+GROUP BY ?name2 ?name
+ORDER BY DESC(?cnt)
+
+------------------------------------------------------------------------------------------------
+| cnt | name                                    | name2                                        |
+================================================================================================
+| 15  | "IBN KHALDOUNE"@fr-FR                   | "ابن خلدون"@ar-AR                            |
+| 1   | "COLLEGE IBN KHALDOUNE"@fr-FR           | "ثانوية ابن خلدون الإعدادية"@ar-AR           |
+| 1   | "ECOLE IBN KHALDOUNE"@fr-FR             | "مدرسة ابن خلدون"@ar-AR                      |
+| 1   | "IBN KHALDOUNE"@fr-FR                   | "                    ابــن خــلـــدون"@ar-AR |
+| 1   | "Ibn Khaldoune"@fr-FR                   | "ابن خلدون"@ar-AR                            |
+| 1   | "LYCEE QUALIFIANT IBN KHALDOUNE"@fr-FR  | "الثا��وية التأهيلية ابن خلدون"@ar-AR        |
+| 1   | "Lycée Collégial Ibn Khaldoune"@fr-FR   | "الثانوية الإعدادية إبن خلدون"@ar-AR         |
+| 1   | "lycee quallifiant IBN KHALDOUNE"@fr-FR | "الثانوية التاهيلية ابن خلدون"@ar-AR         |
+------------------------------------------------------------------------------------------------
+
+
+
+ ====== Processing SELECT :src/main/resources/selects/schoolsInARegion.req ====== 
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  :     <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+PREFIX  ex:   <http://ex.org/a#>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  sch:  <http://schema.org/>
+
+SELECT  (str(?name2) AS ?name) (str(?address2) AS ?address) ?city ?region ?isPublic
+WHERE
+  { ?x  sch:name             ?name2 ;
+        sch:streetAddress    ?address2 ;
+        sch:addressRegion    ?region ;
+        sch:addressLocality  ?city ;
+        :isPublic            ?isPublic ;
+        :isPublic            true
+    FILTER ( ( regex(replace(?region, "\\s", ""), "Sous-Massa-Draa", "i") && ( lang(?name2) = "fr-FR" ) ) && ( lang(?address2) = "fr-FR" ) )
+  }
+ORDER BY ?name
+LIMIT   10
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| name                                | address                                     | city         | region            | isPublic |
+===================================================================================================================================
+| "  ECOLE TAMZERA"                   | "  DOUAR TAMZERA OUISSELSATE TAZNAKHT"      | "Ouarzazate" | "Sous-Massa-Draa" | true     |
+| "  Lycée Collègial sidi boumoussa " | "centre commue sidi boumoussa"              | "Taroudant"  | "Sous-Massa-Draa" | true     |
+| " ADAR"                             | "DOUAR   CENTRE ADAR  C ADAR"               | "Taroudant"  | "Sous-Massa-Draa" | true     |
+| " AL JOUHAR"                        | "DOUAR  TAAOUNYATE AL JOUHAR Com AIT IGAS " | "Taroudant"  | "Sous-Massa-Draa" | true     |
+| " ARRIDA"                           | "COOPERATIVE ARRIDA C.SIDI BOURJA"          | "Taroudant"  | "Sous-Massa-Draa" | true     |
+| " ASKAOUN"                          | "CENTRE ASKAOUN C ASKAOUN"                  | "Taroudant"  | "Sous-Massa-Draa" | true     |
+| " CENTRE AIT WIDIRN"                | "DOUAR AIT WIDIRN"                          | "Tiznit"     | "Sous-Massa-Draa" | true     |
+| " CENTRE AL FID s/s falasten"       | "DOUAR AL FID"                              | "Tiznit"     | "Sous-Massa-Draa" | true     |
+| " CENTRE TIFERMITE"                 | "DOUAR TIFERMITE"                           | "Tiznit"     | "Sous-Massa-Draa" | true     |
+| " CENTRE TIMJADE"                   | "DOUAR TIMJADE"                             | "Tiznit"     | "Sous-Massa-Draa" | true     |
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ ====== Processing SELECT :src/main/resources/selects/mostPopularSchoolName.req ====== 
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  :     <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+PREFIX  ex:   <http://ex.org/a#>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  sch:  <http://schema.org/>
+
+SELECT  (COUNT(?x) AS ?cnt) ?name
+WHERE
+  { ?x  sch:name  ?name
+    FILTER ( lang(?name) = "fr-FR" )
+  }
+GROUP BY ?name
+ORDER BY DESC(?cnt)
+LIMIT   10
+
+------------------------------------
+| cnt | name                       |
+====================================
+| 25  | "ALLAL BEN ABDELLAH"@fr-FR |
+| 21  | "11 JANVIER"@fr-FR         |
+| 20  | "AL AMAL"@fr-FR            |
+| 20  | "BADR"@fr-FR               |
+| 17  | "IBN KHALDOUNE"@fr-FR      |
+| 17  | "IBN SINA"@fr-FR           |
+| 15  | "HASSAN II"@fr-FR          |
+| 15  | "IBN ROCHD"@fr-FR          |
+| 15  | "OUED EDDAHAB"@fr-FR       |
+| 14  | "20 AOUT"@fr-FR            |
+------------------------------------
+
+
+
+ ====== Processing SELECT :src/main/resources/selects/stats.req ====== 
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  :     <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+PREFIX  sch:  <http://schema.org/>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+
+SELECT  ?School ?MiddleSchool ?HighSchool ?Univ ?EducOrganization ?Private ?Public (( ( ( ( ?EducOrganization - ?Univ ) - ?HighSchool ) - ?MiddleSchool ) - ?School ) AS ?unknown)
+WHERE
+  { { SELECT  (COUNT(?s) AS ?HighSchool)
+      WHERE
+        { ?s  a                     <http://schema.org/HighSchool/> }
+    }
+    { SELECT  (COUNT(?s) AS ?School)
+      WHERE
+        { ?s  a                     <http://schema.org/School/> }
+    }
+    { SELECT  (COUNT(?s) AS ?Univ)
+      WHERE
+        { ?s  a                     <http://schema.org/CollegeOrUniversity/> }
+    }
+    { SELECT  (COUNT(?s) AS ?MiddleSchool)
+      WHERE
+        { ?s  a                     <http://schema.org/MiddleSchool/> }
+    }
+    { SELECT  (COUNT(?s) AS ?EducOrganization)
+      WHERE
+        { ?s  a                     <http://schema.org/EducationalOrganization/> }
+    }
+    { SELECT  (COUNT(?s) AS ?Private)
+      WHERE
+        { ?s  :isPublic  false }
+    }
+    { SELECT  (COUNT(?s) AS ?Public)
+      WHERE
+        { ?s  :isPublic  true }
+    }
+  }
+
+---------------------------------------------------------------------------------------------
+| School | MiddleSchool | HighSchool | Univ | EducOrganization | Private | Public | unknown |
+=============================================================================================
+| 7558   | 1753         | 1003       | 45   | 2873             | 2873    | 10299  | -7486   |
+---------------------------------------------------------------------------------------------
+
+
+
+ ====== Processing ASK :src/main/resources/ask/schoolPerCity.req ====== 
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  sch:  <http://schema.org/>
+PREFIX  ex:   <http://ex.org/a#>
+PREFIX  xml:  <http://www.w3.org/XML/1998/namespace>
+
+ASK
+WHERE
+  { SELECT  ?name (COUNT(?name) AS ?nbSchools)
+    WHERE
+      { ?x  sch:name             ?name ;
+            sch:addressLocality  ?city
+        FILTER ( regex(?city, "Safi", "i") && ( ?nbSchools > 10 ) )
+      }
+    GROUP BY ?name
+  }
+
+Result : true

@@ -4,24 +4,19 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import org.apache.jena.datatypes.RDFDatatype;
 import org.apache.jena.ontology.OntClass;
-import org.apache.jena.ontology.OntDocumentManager;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.ontology.OntProperty;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.query.Syntax;
@@ -31,10 +26,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.ResourceFactory;
-import org.apache.jena.rdf.model.Statement;
-import org.apache.jena.rdf.model.impl.StatementImpl;
-import org.apache.jena.shared.JenaException;
-import org.apache.jena.util.FileManager;
 
 public class Projet {
 	
@@ -126,32 +117,8 @@ public class Projet {
 	public static void main(String[] args) throws IOException {
 		System.out.println(Syntax.guessFileSyntax(transform+"req.sparql"));
 		
-		//transformInputs();
+		transformInputs();
 		
-		
-		QueryExecution q = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql",
-						  "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
-						+ "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n"
-						+ "PREFIX dbo: <http://dbpedia.org/ontology/>\n" 
-						+ "PREFIX db-owl: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbpedia-fr: <http://fr.dbpedia.org/resource/>\n"
-						+ "\n"
-						+ "SELECT distinct ?ville ?caplat ?caplong\n" 
-						+ "WHERE {\n" 
-						+ "  ?ville rdf:type dbo:city.\n"
-						+ "  ?ville db-owl:country dbpedia-fr:Maroc.\n" 
-						+ "OPTIONAL {\n" 
-						+ "    ?ville geo:lat ?caplat ;\n"
-						+ "      geo:long ?caplong .\n" 
-						+ "  }\n" 
-						+ "}");
-		
-		
-		
-//		System.out.println(q.getQuery().toString(Syntax.defaultQuerySyntax));
-//		System.out.println(ResultSetFormatter.asText(q.execSelect()));
-
-//		Model data = load();
 		
 		Model data = Files
 				.list(Paths.get(ttls))
@@ -165,6 +132,8 @@ public class Projet {
 		OntModel onto = createOntModel();
 		onto.add(data);
 		onto.write(new FileOutputStream("all_data.xml"));
+		
+		InfModel inf = ModelFactory.createRDFSModel(onto);
 
 		
 		System.out.println("DataSize: "+data.size());
@@ -179,7 +148,7 @@ public class Projet {
 			.map(path->QueryFactory.read(path.toString()))
 			.forEach(query -> {
 				System.out.println(query.toString(Syntax.defaultQuerySyntax));
-				QueryExecution qexec = QueryExecutionFactory.create(query, ModelFactory.createRDFSModel(data)) ;
+				QueryExecution qexec = QueryExecutionFactory.create(query, inf) ;
 				
 				ResultSet results = qexec.execSelect() ;
 				System.out.println(ResultSetFormatter.asText(results));
@@ -242,7 +211,7 @@ public class Projet {
 		streetAdress.addSameAs(onto.createResource("http://dbpedia.org/ontology/address"));
 		
 		onto.write(new FileOutputStream("onto.ttl"),"TURTLE");
-		
+		onto.write(new FileOutputStream("onto.xml"));
 		return onto;
 	}
 	

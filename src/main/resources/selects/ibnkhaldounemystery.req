@@ -1,0 +1,15 @@
+PREFIX  ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX : <http://www.data.gov.ma/data/fr/group/education/ontology.owl#>
+
+SELECT (COUNT(?x) as ?cnt) ?name ?name2
+WHERE {  
+ ?x sch:name ?name;
+ 	sch:name ?name2.
+ FILTER( lang(?name)="fr-FR" && lang(?name2)="ar-AR" && regex(?name,"IBN KHALDOUNE", "i") )
+}
+GROUP BY ?name2 ?name
+ORDER BY DESC(?cnt)
