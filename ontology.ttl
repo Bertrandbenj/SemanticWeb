@@ -33,6 +33,7 @@ sch:School rdfs:subClassOf :EducationalOrganisation;
 			rdfs:domain :EducationalOrganisation;
 			rdfs:range xsd:boolean.
 			
+			
 #sameAs implementation
 
 sch:addressLocality owl:sameAs dbo:city.
