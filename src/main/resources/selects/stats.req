@@ -1,0 +1,63 @@
+PREFIX sch: <http://schema.org/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX : <http://www.data.gov.ma/Education#>
+SELECT 	?School 
+		?MiddleSchool 
+		?HighSchool 
+		?Univ  
+		?EducOrganization 
+		?Private
+		?Public
+		(?EducOrganization - ?Univ - ?HighSchool - ?MiddleSchool - ?School as ?unknown )
+{
+
+	{
+		SELECT (COUNT(?s) as ?HighSchool)
+		WHERE {
+			?s a <http://schema.org/HighSchool/> . 
+		}
+	} 
+
+	{
+		SELECT (COUNT(?s) as ?School)
+		WHERE {
+			?s a <http://schema.org/School/> . 
+		}
+	}
+
+	{
+		SELECT (COUNT(?s) as ?Univ)
+		WHERE {
+			?s a <http://schema.org/CollegeOrUniversity/> . 
+		}
+	} 
+
+	{
+		SELECT (COUNT(?s) as ?MiddleSchool)
+		WHERE {
+			?s a <http://schema.org/MiddleSchool/> . 
+		}
+	}  
+
+	{
+		SELECT (COUNT(?s) as ?EducOrganization)
+		WHERE {
+			?s a <http://schema.org/EducationalOrganization/> . 
+		}
+	} 
+	
+	{
+		SELECT (COUNT(?s) as ?Private)
+		WHERE {
+			?s :isPublic false.  
+		}
+	}  
+	
+	{
+		SELECT (COUNT(?s) as ?Public)
+		WHERE {
+			?s  :isPublic true. 
+		}
+	}   
+}

@@ -4,13 +4,16 @@ PREFIX sch: <http://schema.org/>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX : <http://www.data.gov.ma/Education#>
-SELECT (str(?name)AS ?name2) (str(?address) AS ?address2) ?city ?region ?status
+SELECT (str(?name2)AS ?name) (str(?address2) AS ?address) ?city ?region ?isPublic
 WHERE { 	   
-   		?x sch:name ?name;
-	 	     sch:streetAddress ?address;
-	                 sch:addressRegion ?region;
-	  	     sch:addressLocality ?city;
-                    	     :status ?status.
-  FILTER( regex(str(?region),"Sous-Massa-Draa", "i")  &&   lang(?name)="fr-FR" && lang(?address)="fr-FR" && regex(str(?status),"prive", "i") )
+	?x sch:name ?name2;
+		sch:streetAddress ?address2;
+		sch:addressRegion ?region;
+		sch:addressLocality ?city;
+  		:isPublic ?isPublic;
+  		:isPublic true.
+		
+FILTER( regex(REPLACE(?region,"\\s",""),"Sous-Massa-Draa", "i")  &&   lang(?name2)="fr-FR" && lang(?address2)="fr-FR" )
 }
-  ORDER BY ?name
+ORDER BY ?name
+LIMIT 10

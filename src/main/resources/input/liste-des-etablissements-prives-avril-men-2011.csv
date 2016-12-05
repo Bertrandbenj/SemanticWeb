@@ -1,4 +1,4 @@
-NOM_ETABL,NbreAnnexe,Adresse,Ville,TEL_ETAB,FAX_ETAB,e-mail,Région,Province,Commune
+NOM_ETABL,NbreAnnexe,Adresse,Ville,TEL_ETAB,FAX_ETAB,email,Région,Province,Commune
 Ecole Kamil,1,"Hay Tarik Rue 55, N° 49 Sidi Bernoussi ",Casablanca,022-73-03-54,022-73-03-54,,Grand Casablanca,Sidi Bernoussi,Sidi Bernoussi (AR)
 Annexe Ecole Kamil,0,"Hay Tarik Rue 58, N° 11 Sidi Bernoussi ",Casablanca,022-73-03-54,022-73-03-54,,Grand Casablanca,Sidi Bernoussi,Sidi Bernoussi (AR)
 Institut Al Qods Acharif,0,"Groupe El Baida, Hay Al Qods  Sidi Bernoussi ",Casablanca,0522735060,0522730661,GS.ALQODS.ACHRIF@GMAIL.COM,Grand Casablanca,Sidi Bernoussi,Sidi Bernoussi (AR)
